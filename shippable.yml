@@ -12,6 +12,20 @@ python:
   - 3.5
   - pypy
   - ppy3
+  
+services:
+  - mysql
+  - postgres
+  - mongodb
+  - elasticsearch
+  - redis
+  - memcache
+  - rabbitmq
+  - neo4j
+  - rethinkdb
+  - couchdb
+  #- cassandra
+  #- selenium
 
 build:
   pre_ci_boot:
