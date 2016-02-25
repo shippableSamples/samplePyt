@@ -1,0 +1,34 @@
+
+# Language setting
+language: python
+
+# Version number
+python:
+  - 2.6
+  - 2.7
+  - 3.2
+  - 3.3
+  - 3.4
+  - 3.5
+  - pypy
+  - ppy3
+  
+services:
+  - mysql
+  - postgres
+  - mongodb
+  - elasticsearch
+  - redis
+  - memcache
+  - rabbitmq
+  #- selenium
+  #- sqlite
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u12pytpls
+    image_tag: prod
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+  ci:
+    - python --version
