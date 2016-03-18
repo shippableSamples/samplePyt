@@ -2,7 +2,7 @@
 # Language setting
 language: python
 
-# Version number
+# Version number - yml_merge_test
 python:
   - 2.6
   - 2.7
