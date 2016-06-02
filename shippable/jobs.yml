@@ -1,3 +1,4 @@
+#shippable folder
 jobs:
   - job:
     name: job1
@@ -5,10 +6,10 @@ jobs:
     steps:
       - GET resource1
       - GET resource2
-  
+
   - job:
-    name: job2
+    name: job4
     type: build
     steps:
       - GET resource1
-      - GET resource2
+      - GET resource4
