@@ -13,6 +13,11 @@ python:
   - pypy
   - pypy3
 
+env:
+  global:
+    # - secure:
+    - abc=def
+
 build:
   ci:
     - python --version
