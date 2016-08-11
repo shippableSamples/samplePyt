@@ -9,7 +9,6 @@ python:
 
 env:
   global:
-    - secure: IjqFoNo5BatOAHPJLDsVC8Q6QeusgEw5yK9iEN+XvpqAdnsR64uZ5LEkv/3ZXBLiu3LCN9nsm212wQ5Xejf/xDYJxpbZaNrpmnUVRP9nuui7LRhUPbFMwPFIAB0Eawo1vcQI1/iXhEGaFRv2HdV45kbbOzSH62hYNfb5ohPS6sydVNIBiHIxYjrlkI34e9fRq0PjhQUpgMiskMoz1xG41c4FgPiujvAWYvI0S9Q4u1TksR9pLmRBFpUK7GvjmMOZPfQicZN174XHsP/Y92EJ/Ek1KjwzfmEdRUtEtvDhJlNx7KzHPmjUSS1giGSV9sMfoQW/g7uHDRoSj5w+beq0DA==
     - hoo=plk
 
 build:
