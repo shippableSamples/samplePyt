@@ -10,6 +10,7 @@ python:
 env:
   global:
     - hoo=plk
+    - n1=&&
 
 build:
   ci:
