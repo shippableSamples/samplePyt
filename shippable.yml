@@ -9,6 +9,7 @@ python:
 
 env:
   - hoo=plk
+  - n1=&&
 
 build:
   ci:
