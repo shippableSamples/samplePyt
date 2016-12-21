@@ -10,10 +10,9 @@ python:
 env:
   global:
     - hoo=plk
-    - n1=&&
 
 build:
   ci:
     - python --version
-    - echo "$abc"
+    - echo "$hoo"
     - echo $test
