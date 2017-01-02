@@ -11,6 +11,7 @@ env:
   - hoo=plk
   
 build:
+  cache: true
   ci:
     - python --version
     - echo "$hoo"
