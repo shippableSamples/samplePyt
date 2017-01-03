@@ -9,7 +9,8 @@ python:
 
 env:
   - hoo=plk
-  - test=env
+  global:
+    - test=env
   
 build:
   ci:
