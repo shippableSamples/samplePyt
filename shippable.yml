@@ -8,7 +8,8 @@ python:
   - 2.7
 
 env:
-  - hoo=plk
+  matrix:
+    - hoo=plk
   global:
     - test=env
   
