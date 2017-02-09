@@ -16,5 +16,5 @@ env:
 build:
   ci:
     - python --version
-    - echo "$hoo"
+    - echo $COMMIT_MESSAGE
     - echo $test
