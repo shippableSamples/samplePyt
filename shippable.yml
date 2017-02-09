@@ -18,4 +18,4 @@ build:
     - python --version
     - echo $COMMIT_MESSAGE
     - echo $test
-    - pwd
+    - ls
