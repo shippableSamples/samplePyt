@@ -11,7 +11,7 @@ env:
   matrix:
     - hoo=plk
   global:
-    - test="my(branch)name"
+    - test='test"'
   
 build:
   ci:
