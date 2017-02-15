@@ -9,7 +9,7 @@ python:
 
 env:
   matrix:
-    - hoo=plk
+    - hoo=plkd
   global:
     - test='test"'
   
