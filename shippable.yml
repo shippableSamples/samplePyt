@@ -19,3 +19,5 @@ build:
     - echo $COMMIT_MESSAGE
     - echo $test
     - pwd
+  post_ci:
+    - exit 0
