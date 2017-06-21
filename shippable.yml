@@ -18,6 +18,6 @@ build:
     - python --version
     - echo $COMMIT_MESSAGE
     - echo $test
-    - pwd
+    - exit 0
   post_ci:
     - exit 0
