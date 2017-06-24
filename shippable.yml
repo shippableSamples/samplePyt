@@ -16,9 +16,9 @@ env:
 build:
   ci:
     - python --version
-    - exit 0
+    - return 0
     - echo $COMMIT_MESSAGE
     - echo $test
-    - exit 0
+    - return 0
   post_ci:
-    - exit 0
+    - return 0
