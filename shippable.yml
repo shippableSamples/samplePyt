@@ -15,6 +15,7 @@ env:
   
 build:
   ci:
+    - printenv
     - python --version
     - return 0
     - echo $COMMIT_MESSAGE
