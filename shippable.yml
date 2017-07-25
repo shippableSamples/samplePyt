@@ -27,7 +27,7 @@ build:
     - return 0
   post_ci:
     - return 0
-  integrations:                 
+integrations:                 
   hub:
     - integrationName: docker   ##replace with your integration name
       type: docker
