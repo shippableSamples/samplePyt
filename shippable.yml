@@ -14,6 +14,8 @@ env:
     - test='test"'
   
 build:
+  pre_ci:
+    - echo lol
   pre_ci_boot:
     image_name: shipimg/genexec    ##replace with your repo and image name
     image_tag: latest
@@ -27,6 +29,7 @@ build:
     - return 0
   post_ci:
     - return 0
+
 integrations:                 
   hub:
     - integrationName: docker   ##replace with your integration name
