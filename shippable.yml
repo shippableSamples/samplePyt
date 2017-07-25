@@ -14,6 +14,10 @@ env:
     - test='test"'
   
 build:
+  pre_ci_boot:
+    image_name: shipimg/genexec    ##replace with your repo and image name
+    image_tag: latest
+    pull: false
   ci:
     - printenv
     - python --version
