@@ -16,7 +16,7 @@ def fun2():
         sem.release()
         time.sleep(0.25)
 
-t = threading.Thread(target = fun1)
-t.start()
-t2 = threading.Thread(target = fun2)
-t2.start()
+#t = threading.Thread(target = fun1)
+#t.start()
+#t2 = threading.Thread(target = fun2)
+#t2.start()
