@@ -12,6 +12,7 @@ build:
     - python --version
     - echo $COMMIT_MESSAGE
     - echo $test
+    - ls
   on_success:
     - df -h
     - df -i 
