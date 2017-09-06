@@ -17,12 +17,12 @@ build:
   on_success:
     - df -h
     - df -i
-    - ipcs -asmq
+    - ipcs
     - sudo docker ps
   post_ci:
     - df -h
     - df -i
-    - ipcs -asmq
+    - ipcs
     - sudo docker ps
 #integrations:                 
 #  hub:
