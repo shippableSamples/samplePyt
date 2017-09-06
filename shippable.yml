@@ -7,12 +7,6 @@ python:
   - 2.7
 
 build:
-  pre_ci:
-    - echo lol
-  pre_ci_boot:
-    image_name: alpine    ##replace with your repo and image name
-    image_tag: latest
-    pull: true
   ci:
     - printenv
     - python --version
