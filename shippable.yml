@@ -4,15 +4,8 @@ language: python
 
 # Version number
 python:
-  - 2.6
   - 2.7
 
-env:
-  matrix:
-    - hoo=plkd
-  global:
-    - test='test"'
-  
 build:
   pre_ci:
     - echo lol
@@ -23,14 +16,15 @@ build:
   ci:
     - printenv
     - python --version
-    - return 0
     - echo $COMMIT_MESSAGE
     - echo $test
-    - return 0
+  on_success:
+    - df -h
+    - df -i 
   post_ci:
-    - return 0
-
-integrations:                 
-  hub:
-    - integrationName: docker   ##replace with your integration name
-      type: docker
+    - df -h
+    - df -i
+#integrations:                 
+#  hub:
+#    - integrationName: docker   ##replace with your integration name
+#      type: docker
