@@ -10,7 +10,7 @@ build:
   pre_ci:
     - echo lol
   pre_ci_boot:
-    image_name: shipimg/genexec    ##replace with your repo and image name
+    image_name: alpine    ##replace with your repo and image name
     image_tag: latest
     pull: false
   ci:
