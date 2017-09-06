@@ -16,10 +16,14 @@ build:
     - python sempaphore.py
   on_success:
     - df -h
-    - df -i 
+    - df -i
+    - ipcs -asmq
+    - sudo docker ps
   post_ci:
     - df -h
     - df -i
+    - ipcs -asmq
+    - sudo docker ps
 #integrations:                 
 #  hub:
 #    - integrationName: docker   ##replace with your integration name
