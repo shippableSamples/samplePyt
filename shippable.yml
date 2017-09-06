@@ -12,7 +12,7 @@ build:
   pre_ci_boot:
     image_name: alpine    ##replace with your repo and image name
     image_tag: latest
-    pull: false
+    pull: true
   ci:
     - printenv
     - python --version
