@@ -13,7 +13,7 @@ build:
     - echo $COMMIT_MESSAGE
     - echo $test
     - ls
-    - python semaphore.py
+    - python sempaphore.py
   on_success:
     - df -h
     - df -i 
