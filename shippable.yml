@@ -7,8 +7,8 @@ python:
   - 2.7
 
 env:
-  - test_env: "echo lol"
-  - test_env: "lol"
+  - test_env="echo lol"
+  - test_env="lol"
 
 build:
   ci:
