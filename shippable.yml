@@ -11,6 +11,10 @@ env:
   - test_env="lol"
 
 build:
+  pre_ci_boot:
+    image_name: alpine
+    image_tag: latest
+    pull: true
   ci:
     - printenv
     - python --version
