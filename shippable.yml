@@ -13,7 +13,7 @@ env:
 build:
   pre_ci_boot:
     pre_ci_boot:
-    image_name: drydock/u16pytall
+    image_name: drydock/u14pytall
     image_tag: v5.8.2
     pull: true
     options: "-m=7m"
