@@ -16,12 +16,11 @@ build:
     image_name: drydock/u14pytall
     image_tag: v5.8.2
     pull: true
-    options: "-m=7m"
+    options: "-m=512m"
 
 
   ci:
-    - wget https://download.docker.com/linux/static/stable/x86_64/docker-17.06.0-ce.tgz -P /tmp/docker
-    - cat /tmp/docker/docker
+    - service --status-all
 #integrations:                 
 #  hub:
 #    - integrationName: docker   ##replace with your integration name
