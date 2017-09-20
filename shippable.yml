@@ -16,7 +16,7 @@ build:
     image_name: drydock/u16pytall
     image_tag: v5.8.2
     pull: true
-    options: "-m=25m"
+    options: "-m=512m"
 
 
   ci:
