@@ -12,27 +12,17 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: alpine
-    image_tag: latest
-    pull: true
+    pre_ci_boot:
+    image_name: drydock/u16pytall
+    image_tag: v5.8.2
+    pull: false
+    options: "-m=4m"
+
+
   ci:
     - printenv
-    - python --version
-    - echo $COMMIT_MESSAGE
-    - echo $test
-    - ls
-    - eval $test_env
-    - python sempaphore.py
-  on_success:
-    - df -h
-    - df -i
-    - ipcs
-    - sudo docker ps
-  post_ci:
-    - df -h
-    - df -i
-    - ipcs
-    - sudo docker ps
+    - wget https://download.docker.com/linux/static/stable/x86_64/docker-$DOCKER_VERSION-ce.tgz -P /tmp/docker
+    - cat /tmp/docker/docker
 #integrations:                 
 #  hub:
 #    - integrationName: docker   ##replace with your integration name
