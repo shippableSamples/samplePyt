@@ -15,8 +15,8 @@ build:
     pre_ci_boot:
     image_name: drydock/u16pytall
     image_tag: v5.8.2
-    pull: false
-    options: "-m=4m"
+    pull: true
+    options: "-m=20m"
 
 
   ci:
