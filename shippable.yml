@@ -8,10 +8,9 @@ python:
 
 build:
   pre_ci_boot:
-    pre_ci_boot:
-     image_name: drydockaarch64/u16pyt
-     image_tag: master
-     pull: true
+    image_name: drydockaarch64/u16pyt
+    image_tag: master
+    pull: true
   ci:
     - python -V
 #integrations:                 
