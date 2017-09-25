@@ -11,16 +11,8 @@ env:
   - test_env="lol"
 
 build:
-  pre_ci_boot:
-    pre_ci_boot:
-    image_name: drydock/u14pytall
-    image_tag: v5.8.2
-    pull: true
-    options: "-m=512m"
-
-
   ci:
-    - service --status-all
+    - python -V
 #integrations:                 
 #  hub:
 #    - integrationName: docker   ##replace with your integration name
