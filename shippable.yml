@@ -12,7 +12,10 @@ build:
     image_tag: master
     pull: true
   ci:
-    - python -V 
+    - python -V
+    - docker ps
+    - docker pull alpine
+    - docker build -t=test .
 #integrations:                 
 #  hub:
 #    - integrationName: docker   ##replace with your integration name
