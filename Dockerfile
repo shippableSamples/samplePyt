@@ -1,4 +1,4 @@
-FROM drydock/u12nod:prod
+FROM arm64v8/ubuntu:16.04
 
-RUN mkdir -p /tmp/logs
+RUN apt-get update
  
