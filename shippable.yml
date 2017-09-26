@@ -15,6 +15,7 @@ build:
     - python -V
     - docker ps
     - docker build -t=test .
+    - docker images
 #integrations:                 
 #  hub:
 #    - integrationName: docker   ##replace with your integration name
