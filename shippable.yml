@@ -14,7 +14,6 @@ build:
   ci:
     - python -V
     - docker ps
-    - docker pull alpine
     - docker build -t=test .
 #integrations:                 
 #  hub:
