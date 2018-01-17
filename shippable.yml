@@ -7,7 +7,13 @@ python:
   - 2.7
 
 build:
+  pre_ci_boot:
+    image_name: drydockaarch64/u16pyt
+    image_tag: master
+    pull: true
+    options: -v /etc/dhcp:/tmp
   ci:
+    - cat /tmp/dhclient.conf
     - cat /etc/resolv.conf
     - docker ps
     - docker images
