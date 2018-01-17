@@ -11,7 +11,7 @@ build:
     image_name: drydockaarch64/u16pyt
     image_tag: master
     pull: true
-    options: -v /etc/dhcp:/tmp
+    options: -v /etc/dhcp/dhclient.conf:/tmp/dhclient.conf
   ci:
     - cat /tmp/dhclient.conf
     - cat /etc/resolv.conf
