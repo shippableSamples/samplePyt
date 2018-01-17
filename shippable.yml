@@ -12,9 +12,8 @@ build:
     image_tag: master
     pull: true
   ci:
-    - python -V
+    - cat /etc/resolv.conf
     - docker ps
-    - docker build -t=test .
     - docker images
 #integrations:                 
 #  hub:
