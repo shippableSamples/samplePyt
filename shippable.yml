@@ -8,9 +8,9 @@ python:
 
 build:
   pre_ci_boot:
-    image_name: drydockaarch64/u16pyt
-    image_tag: master
-    pull: true
+    image_name: drydock/u16pyt
+    image_tag: v5.10.4
+    pull: false
     options: -v /etc/dhcp/dhclient.conf:/tmp/dhclient.conf
   ci:
     - cat /tmp/dhclient.conf
