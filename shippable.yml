@@ -12,7 +12,6 @@ build:
     image_tag: v6.3.4
     pull: false
   ci:
-    - cat /tmp/dhclient.conf
     - cat /etc/resolv.conf
     - docker ps
     - docker images
