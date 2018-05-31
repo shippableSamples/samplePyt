@@ -2,16 +2,9 @@
 # Language setting
 language: python
 
-# Version number
-python:
-  - 2.7
-
 build:
-  pre_ci_boot:
-    image_name: drydock/u16pytall
-    image_tag: v6.3.4
-    pull: false
   ci:
+    - sl
     - cat /etc/resolv.conf
     - docker ps
     - docker images
