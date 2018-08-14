@@ -1,14 +1,9 @@
 
 # Language setting
-language: python
+language: none
+
+depth: 1
 
 build:
   ci:
-    - sl
-    - cat /etc/resolv.conf
-    - docker ps
-    - docker images
-#integrations:                 
-#  hub:
-#    - integrationName: docker   ##replace with your integration name
-#      type: docker
+    - printenv
