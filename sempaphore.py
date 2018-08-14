@@ -12,7 +12,7 @@ def fun1():
 def fun2():
     for num in range(1,20):
         sem.acquire()
-        print(2)
+        print(3)
         sem.release()
         time.sleep(0.25)
 
