@@ -2,10 +2,8 @@
 # Language setting
 language: none
 
-depth: "10"
+depth: 1
 
 build:
   ci:
     - printenv
-    - sleep 100
-    - ls ~/.git-credentials
