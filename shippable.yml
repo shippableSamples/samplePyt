@@ -7,5 +7,4 @@ depth: 400
 build:
   ci:
     - printenv
-    - sleep 100
     - ls ~/.git-credentials
