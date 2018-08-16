@@ -6,4 +6,4 @@ depth: 1
 
 build:
   ci:
-    - printenv
+    - printenv SHIPPABLE_DEPTH
