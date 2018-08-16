@@ -2,7 +2,7 @@
 # Language setting
 language: none
 
-depth: -1
+depth: "1"
 
 build:
   ci:
