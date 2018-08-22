@@ -2,8 +2,11 @@
 # Language setting
 language: none
 
-depth: 2
+gitConfig:
+  - http.sslVerify false
+  - core.editor emacs
 
 build:
   ci:
-    - printenv SHIPPABLE_DEPTH
+    - git config -l | grep emacs
+    - git config -l | grep "http.sslverify=false"
