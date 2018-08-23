@@ -1,18 +1,21 @@
 
 # Language setting
-language: python
+language: none
 
-# Version number
-python:
-  - 2.6
-  - 2.7
-  - 3.2
-  - 3.3
-  - 3.4
-  - 3.5
-  - pypy
-  - pypy3
+depth: 1
+
+gitConfig:
+  - http.sslVerify false
+  - core.editor emacs
 
 build:
   ci:
-    - python --version
+    - pushd $(shipctl get_resource_state "samplePyt_bitbucket")
+    - git log
+    - popd
+    - pushd $(shipctl get_resource_state "samplePyt_github")
+    - git log
+    - popd
+    - pushd $(shipctl get_resource_state "samplePyt_gitlab")
+    - git log
+    - popd
