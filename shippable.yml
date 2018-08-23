@@ -8,5 +8,12 @@ gitConfig:
 
 build:
   ci:
-    - git config -l | grep emacs
-    - git config -l | grep "http.sslverify=false"
+    - pushd $(shipctl get_resource_state "samplePyt_bitbucket")
+    - git log
+    - popd
+    - pushd $(shipctl get_resource_state "samplePyt_github")
+    - git log
+    - popd
+    - pushd $(shipctl get_resource_state "samplePyt_gitlab")
+    - git log
+    - popd
